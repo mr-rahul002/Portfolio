@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8dcac662.css",
+    "main.js": "/static/js/main.73962258.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/color-sharp2.png": "/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/banner-bg.png": "/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/coder.png": "/static/media/coder.1764f4cfed375a2091dc.png",
+    "static/media/header-img.svg": "/static/media/header-img.400baa4260daac98f2b2b1ccf08761c2.svg",
+    "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/LinkedIn_logo_initials.png": "/static/media/LinkedIn_logo_initials.ec1b78ed3b713c40f8b5.png",
+    "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/std.png": "/static/media/std.d0295bcee5f159ac4c80.png",
+    "static/media/LeetCode_logo_black.png": "/static/media/LeetCode_logo_black.c79f333b12595d3eec8f.png",
+    "static/media/cpp.png": "/static/media/cpp.7d19acd9ddedca6adbdc.png",
+    "static/media/java.png": "/static/media/java.d495da225d0b148a1c7d.png",
+    "static/media/git.png": "/static/media/git.5cb09571fdc58bb981f2.png",
+    "static/media/github.png": "/static/media/github.a7f89344e77908959ab1.png",
+    "static/media/html5.png": "/static/media/html5.8bf038547a15d04e0549.png",
+    "static/media/css3.png": "/static/media/css3.6ff70445747d9d37c578.png",
+    "static/media/LiveCaption.png": "/static/media/LiveCaption.e8401136fc7a80d6e414.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/Cplayer.png": "/static/media/Cplayer.2513d68f004fbbee3932.png",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/nav-icon3.svg": "/static/media/nav-icon3.72cef43bc93b04f52e29f022ef720f8b.svg",
+    "static/media/nav-icon1.svg": "/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
+    "index.html": "/index.html",
+    "static/media/flutter.svg": "/static/media/flutter.c7660c6662d5ce8fb84f923fbec530e2.svg",
+    "static/media/nav-icon2.svg": "/static/media/nav-icon2.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
+    "main.8dcac662.css.map": "/static/css/main.8dcac662.css.map",
+    "main.73962258.js.map": "/static/js/main.73962258.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dcac662.css",
+    "static/js/main.73962258.js"
+  ]
+}
