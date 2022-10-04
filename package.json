@@ -1,17 +1,14 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://mr-rahul002.github.io/Portfolio",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.7.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate": "^1.0.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
-    "emailjs": "^4.0.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-icons": "^1.9.1",
@@ -48,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
