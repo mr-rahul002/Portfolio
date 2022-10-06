@@ -106,7 +106,8 @@ export const NavBar = () => {
 									<img src={navIcon3} alt="instagram" />
 								</a>
 							</div>
-							<a href="https://drive.google.com/u/0/uc?id=1AAAj2eIdnKQrGrFBhkQyTgESvpBABB2n&export=download" target="_blank"
+						
+							<a href="https://drive.google.com/u/0/uc?id=1OV7c1PAIBlmR8kT1N56GlHXfQROArbJg&export=download" target="_blank"
 									rel="noreferrer">
 								<button className="vvd">
 									<span>Resume</span>
