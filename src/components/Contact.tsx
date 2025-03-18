@@ -1,6 +1,7 @@
 
 import { useRef, useEffect, useState } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { supabase } from '@/utils/supabaseClient';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,23 +45,36 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
+  
+    try {
+      const { data, error } = await supabase.from('contacts').insert([formData]);
+  
+      if (error) {
+        console.error('Error:', error.message);
+        alert('Failed to submit. Please try again.');
+      } else {
+        console.log('Form submitted:', data);
+        alert('Thank you for your message! I will get back to you soon.');
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      }
+    } catch (err) {
+      console.error('Unexpected error:', err);
+      alert('Something went wrong. Please try again.');
+    } finally {
       setIsSubmitting(false);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      alert('Thank you for your message! I will get back to you soon.');
-    }, 1500);
+    }
   };
+  
   
   return (
     <section 
@@ -103,7 +117,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm text-white/70 mb-1">Email</h4>
-                    <p className="font-medium">r07rahulseth@gmail.com</p>
+                    <p className="font-medium">02rahulseth@gmail.com</p>
                   </div>
                 </div>
                 
