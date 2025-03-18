@@ -1,4 +1,5 @@
 
+
 import { useRef, useEffect, useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -8,7 +9,7 @@ const projects = [
     title: "Government Portal (Licensing Platform)",
     description: "Developed an online platform enabling individuals to apply for permits and licenses to operate businesses in Saudi Arabia cities, enhancing accessibility and efficiency.",
     technologies: ["MuleSoft", "Appian","Dataweave","RAML", "SQL SERVER"],
-    image: "/placeholder.svg",
+    image: "/LicenseAndPermits.jpg",
     // linkDemo: "#",
     // linkGithub: "#",
   },
@@ -17,7 +18,7 @@ const projects = [
     title: "Government Portal (Disability Service for Public Domain Saudi)",
     description: "Developed a platform for social workers to manage license needs, from application to approval, improving accessibility for disability services in Saudi Arabia.",
     technologies: ["MuleSoft", "Appian","Dataweave","RAML", "SQL SERVER"],
-    image: "/placeholder.svg",
+    image: "/Social.png",
     // linkDemo: "#",
     // linkGithub: "#",
   },
@@ -26,7 +27,7 @@ const projects = [
     title: "Government Health & Services Portal",
     description: "Developed a platform enabling citizens and non-citizens to access government services in health, care, shelter, and finance, improving service delivery and efficiency.",
     technologies: ["Appian","SQL"],
-    image: "/placeholder.svg",
+    image: "/DisabilityAndHealth.png",
     // linkDemo: "#",
     // linkGithub: "#",
   },
