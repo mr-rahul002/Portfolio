@@ -5,6 +5,7 @@ import ResumeButton from './ResumeButton';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu visibility
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +39,11 @@ const Navbar = () => {
         behavior: 'smooth'
       });
     }
+    setIsMobileMenuOpen(false); // Close mobile menu after clicking a link
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle mobile menu visibility
   };
 
   return (
@@ -58,6 +64,7 @@ const Navbar = () => {
           </span>
         </div>
 
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {['home', 'about', 'experience', 'projects', 'skills', 'contact'].map((item) => (
             <button
@@ -76,8 +83,12 @@ const Navbar = () => {
           <ResumeButton className="ml-4" />
         </div>
 
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button className="w-10 h-10 flex items-center justify-center">
+          <button
+            onClick={toggleMobileMenu}
+            className="w-10 h-10 flex items-center justify-center"
+          >
             <span className="sr-only">Open menu</span>
             <div className="space-y-1.5">
               <span className="block w-5 h-0.5 bg-black"></span>
@@ -85,6 +96,27 @@ const Navbar = () => {
             </div>
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-16 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm">
+            <div className="flex flex-col items-center space-y-4 py-4">
+              {['home', 'about', 'experience', 'projects', 'skills', 'contact'].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item)}
+                  className={cn(
+                    "font-medium text-sm uppercase tracking-wide transition-all duration-300 hover:text-black",
+                    activeSection === item ? "text-black" : "text-gray-500"
+                  )}
+                >
+                  {item}
+                </button>
+              ))}
+              <ResumeButton />
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
