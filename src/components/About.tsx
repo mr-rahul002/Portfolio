@@ -1,6 +1,7 @@
-
 import { useRef, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+// Import the image if using a module bundler like Webpack/Vite
+
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,9 +45,13 @@ const About = () => {
           <div>
             <div className="relative">
               <div className="aspect-ratio-square w-full h-[360px] bg-gray-200 rounded-lg overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  <span className="text-sm">Profile Image</span>
-                </div>
+                {/* Replace the placeholder with the actual image */}
+                <img 
+                  src='public/profile.JPG' // Using imported image
+                  // OR use direct path if not using a bundler: src="/profile.JPG"
+                  alt="Rahul Seth Profile" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-black"></div>
@@ -72,7 +77,7 @@ const About = () => {
             </div>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-            Dynamic Software Development Professional with over 2 years of experience designing and delivering innovative, user-centric solutions for government and enterprise applications. Skilled in low-code development (Appian) and integrations, proficient in workflow automation, REST/SOAP API development, and database design and integration. Experienced in developing mobile and web applications using Flutter, enhancing cross-platform functionality and user experience.
+              Dynamic Software Development Professional with over 2 years of experience designing and delivering innovative, user-centric solutions for government and enterprise applications. Skilled in low-code development (Appian) and integrations, proficient in workflow automation, REST/SOAP API development, and database design and integration. Experienced in developing mobile and web applications using Flutter, enhancing cross-platform functionality and user experience.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
