@@ -45,11 +45,11 @@ const About = () => {
           <div>
             <div className="relative">
               <div className="aspect-ratio-square w-full h-[360px] bg-gray-200 rounded-lg overflow-hidden">
-                {/* Replace the placeholder with the actual image */}
-                <img 
-                  src='public/profile.JPG' // Using imported image
-                  // OR use direct path if not using a bundler: src="/profile.JPG"
-                  alt="Rahul Seth Profile" 
+
+                <img
+                  src='public/profile.JPG'
+
+                  alt="Rahul Seth Profile"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
