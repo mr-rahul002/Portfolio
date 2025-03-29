@@ -84,6 +84,7 @@
   },
   "description": "**URL**: (Project URL removed)",
   "main": "eslint.config.js",
+  "homepage": "https://github.com/mr-rahul002/Portfolio",
   "keywords": [],
   "author": "",
   "license": "ISC"
