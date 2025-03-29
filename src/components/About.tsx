@@ -47,7 +47,7 @@ const About = () => {
               <div className="aspect-ratio-square w-full h-[360px] bg-gray-200 rounded-lg overflow-hidden">
 
                 <img
-                  src='public/profile.JPG'
+                  src='/profile.JPG'
 
                   alt="Rahul Seth Profile"
                   className="w-full h-full object-cover"
