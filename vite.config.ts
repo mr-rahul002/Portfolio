@@ -7,7 +7,7 @@ export default defineConfig({
     port: 8080,
   },
   plugins: [react()],
-  base: "/Portfolio", // Ensure this matches your repo name
+  base: "/Portfolio/", // Ensure this matches your repo name
   resolve: {
     alias: {
       "@": "/src", // Vite allows direct aliasing without using `path`
