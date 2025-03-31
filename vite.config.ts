@@ -10,7 +10,7 @@ export default defineConfig({
   base: "/Portfolio/", // Ensure this matches your repo name
   resolve: {
     alias: {
-      "@": "/src", // Vite allows direct aliasing without using `path`
+      "@": "/src", 
     },
   },
 });
