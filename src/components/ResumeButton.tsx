@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"; // Assuming you're using a utility library for classNames
+import { cn } from "@/lib/utils";
 
 interface ResumeButtonProps {
     className?: string;
@@ -6,11 +6,14 @@ interface ResumeButtonProps {
 
 const ResumeButton = ({ className }: ResumeButtonProps) => {
     const handleResumeDownload = () => {
+        // For GitHub Pages deployment
+        const resumeUrl = process.env.NODE_ENV === 'production'
+            ? '/Portfolio/Resume.pdf'
+            : '/Resume.pdf';
 
-        const resumeUrl = '/Resume.pdf';
         const link = document.createElement('a');
         link.href = resumeUrl;
-        link.download = 'Rahul_Seth_Resume.pdf';
+        link.download = 'Rahul_Seth_Resume.pdf'; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
-// Import the image if using a module bundler like Webpack/Vite
-
+import { Link } from "react-scroll";
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -47,7 +46,7 @@ const About = () => {
               <div className="aspect-ratio-square w-full h-[360px] bg-gray-200 rounded-lg overflow-hidden">
 
                 <img
-                  src='/profile.JPG'
+                  src='/Portfolio/profile.JPG'
 
                   alt="Rahul Seth Profile"
                   className="w-full h-full object-cover"
@@ -99,12 +98,12 @@ const About = () => {
               </div>
             </div>
 
-            <a
-              href="#contact"
+            <Link
+              to="contact"
               className="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-all duration-300 ease-in-out"
             >
               Let's Work Together
-            </a>
+            </Link>
           </div>
         </div>
       </div>

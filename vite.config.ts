@@ -3,11 +3,11 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   server: {
-    host: true, // Allows local network access
+    host: true,
     port: 8080,
   },
   plugins: [react()],
-  base: "/Portfolio/", // Ensure this matches your repo name
+  base: "/Portfolio/",
   resolve: {
     alias: {
       "@": "/src", 
