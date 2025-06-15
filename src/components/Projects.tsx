@@ -134,7 +134,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-40 md:h-full object-contain md:object-cover transition-transform duration-700 group-hover:scale-105 bg-white rounded-t-lg"
+                    className="w-full h-40 md:h-full object-contain transition-transform duration-700 group-hover:scale-105 bg-white rounded-t-lg"
                   />
                   {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                     <div className="flex gap-3">
