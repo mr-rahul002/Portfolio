@@ -6,17 +6,37 @@ interface ResumeButtonProps {
 
 const ResumeButton = ({ className }: ResumeButtonProps) => {
     const handleResumeDownload = () => {
-        // For GitHub Pages deployment
-        const resumeUrl = process.env.NODE_ENV === 'production'
-            ? '/Portfolio/Resume.pdf'
-            : '/Resume.pdf';
-
-        const link = document.createElement('a');
-        link.href = resumeUrl;
-        link.download = 'Rahul_Seth_Resume.pdf'; 
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        try {
+            // Use Vite's import.meta.env.BASE_URL to handle the base path correctly
+            // This works for both local dev ('/') and GitHub Pages ('/Portfolio/')
+            const resumeUrl = `${import.meta.env.BASE_URL}Resume.pdf`.replace('//', '/');
+            
+            // Method 1: Try using fetch to get the file and create blob
+            fetch(resumeUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = 'Rahul_Seth_Resume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => {
+                    console.error('Download failed:', error);
+                    // Fallback: direct link approach
+                    const link = document.createElement('a');
+                    link.href = resumeUrl;
+                    link.download = 'Rahul_Seth_Resume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+        } catch (error) {
+            console.error('Resume download error:', error);
+            // Final fallback: open in new tab
+            window.open(`${import.meta.env.BASE_URL}Resume.pdf`.replace('//', '/'), '_blank');
+        }
     };
 
     return (
