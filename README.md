@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ## 🚀 Live Demo
 
-[Portfolio Website](https://github.com/mr-rahul002/Portfolio)
+[Portfolio Website](https://mr-rahul002.github.io/Portfolio)
 
 ## 📋 Table of Contents
 
