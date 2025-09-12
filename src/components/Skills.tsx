@@ -9,7 +9,7 @@ const skills = [
     icon: <Code className="w-6 h-6" />,
     items: [
       { name: "Java", level: 75 },
-      { name: "Flutter", level: 65 },
+      { name: "C", level: 60 },
      
     ]
   },
