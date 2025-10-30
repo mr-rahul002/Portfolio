@@ -8,7 +8,7 @@ const experiences = [
     company: "XEBIA",
     location: "Jaipur, Rajasthan",
     position: "CONSULTANT",
-    period: "July 2025- Present",
+    period: "October 2025- Present",
     description: [
       "Led and delivered advanced business workflows using Appian and related technologies, driving project success for large-scale enterprise clients.",
       "Managed integration tasks, REST/SOAP APIs, automation design, and optimized database solutions for increased efficiency and scalability.",
@@ -22,7 +22,7 @@ const experiences = [
     company: "XEBIA",
     location: "Jaipur, Rajasthan",
     position: "JUNIOR CONSULTANT",
-    period: "April 2023 - June 2025",
+    period: "April 2023 - September 2025",
     description: [
       "Designed and implemented complex business workflows using MuleSoft, leveraging DataWeave, Flow Design, API Management, REST/SOAP and database connectivity.",
       "Developed dynamic, user-friendly, and mobile-compatible processes in Appian, utilizing SAIL, Process Models, Records, Reports, Document Generation, Web APIs, and database integrations.",
