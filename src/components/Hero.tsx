@@ -77,12 +77,15 @@ const Hero = () => {
             className="flex flex-col md:flex-row gap-4 items-center justify-center opacity-0"
             style={{ animationDelay: '0.6s' }}
           >
-            <a
-              href="mailto:02rahulseth@gmail.com"
-              className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-all duration-300 ease-in-out"
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-80}  // Adjusts for fixed navbar
+              className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-all duration-300 ease-in-out cursor-pointer"
             >
               Get in Touch
-            </a>
+            </Link>
             <Link
               to="projects"
               smooth={true}
@@ -107,8 +110,8 @@ const Hero = () => {
       </div>
 
       {/* Background patterns */}
-      <div className="absolute top-1/4 left-10 w-24 h-24 border border-black/20 rounded-full mix-blend-multiply blur-sm opacity-20 animate-pulse-slow"></div>
-      <div className="absolute bottom-1/4 right-10 w-32 h-32 border border-black/20 rounded-full mix-blend-multiply blur-sm opacity-20 animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+      <div className="pointer-events-none absolute top-1/4 left-6 w-40 h-40 rounded-full bg-gradient-to-tr from-black/10 via-black/5 to-transparent blur-3xl opacity-80 animate-pulse-slow" />
+      <div className="pointer-events-none absolute bottom-1/4 right-4 w-52 h-52 rounded-full bg-gradient-to-tl from-black/10 via-black/5 to-transparent blur-3xl opacity-80 animate-pulse-slow" style={{ animationDelay: '1s' }} />
     </section>
   );
 };
